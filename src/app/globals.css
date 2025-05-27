@@ -143,7 +143,7 @@ ul, ol{list-style: none;}
   color: #888;
 }
 
-input[type="text"] {
+.mobileForm input[type="text"] {
   border: none;
   outline: none;
   flex: 1;
@@ -250,6 +250,53 @@ input[type="text"] {
   line-height: 22px;
   margin: 15px 0;
 }
+
+.form-container{
+  background-color: #0c5595;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow:0 0 9px 2px rgb(124 116 116);
+  width: 100%;
+  max-width: 750px;
+  margin-top: 20px;
+}
+.full_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.form-container .form-title{
+  text-align: center;
+  padding: 0px 10px 10px; 
+  font-size: 24px; 
+  color:#FFF 
+}
+.form-container .form-group{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.form-container .form-group .form-field{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-group .form-field input[type="text"], .form-container .form-group .form-field select, .form-container .form-group .form-field input[type="email"]{
+  width: 100%;
+  height: 42px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 2px;
+}
+
 @media (max-width: 768px) {
   .main_container{
     display: block;

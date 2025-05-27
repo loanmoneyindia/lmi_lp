@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import RightSide from "@/components/right-side";
 
 import logo from "../../public/images/logo.png";
