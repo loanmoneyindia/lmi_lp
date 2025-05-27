@@ -66,13 +66,35 @@ const Form1 = () => {
         }
     };
 
-    const onSubmitOtp = (data) => {
-        console.log("Entered OTP:", data.otp);
-        console.log("Mobile:", mobile);
-        console.log("Application No:", applicationNo);
+    const onSubmitOtp = async (data) => {
+        try {
+            const response = await fetch("https://www.loanmoney.co.in/lmi_apis/verify_otp.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: "Bearer a8d5f4e2b6c7a1f9d0e3g7h2k8l6m1z9", // match backend
+                },
+                body: JSON.stringify({
+                    mobile: mobile,
+                    applicationno: applicationNo,
+                    otp: data.otp,
+                }),
+            });
 
-        // Call PHP verification API here (optional)
+            const result = await response.json();
+
+            if (response.ok && result.status === "success") {
+                alert("OTP Verified Successfully!");
+                // Proceed to next step
+            } else {
+                alert(result.message || "Invalid OTP");
+            }
+        } catch (error) {
+            console.error("Error verifying OTP:", error);
+            alert("Something went wrong.");
+        }
     };
+
 
     return (
         <>
