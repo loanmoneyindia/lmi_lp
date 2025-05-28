@@ -34,7 +34,7 @@ const Form1 = () => {
         })
         .filter(Boolean)
         .join('&');
-        const finalUrl = `/apply-personal-loan?data=${encodeURIComponent(CipherText)}${utmQuery ? `&${utmQuery}` : ''}`;
+        const finalUrl = `/apply-personal-loan?data=${encodeURIComponent(cipherText)}${utmQuery ? `&${utmQuery}` : ''}`;
         router.push(finalUrl);
     };
 

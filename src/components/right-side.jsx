@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Form1 from "./Form1";
+import { Suspense } from 'react'
 
 import bullets from "../../public/images/check-mark.png";
 const RightSide = () => {
@@ -15,7 +16,9 @@ const RightSide = () => {
             <li><div className="right_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Loan disbursement in just 2 hours</li>
             </ul>
           </div>
+          <Suspense fallback={<div>Loading...</div>}>
           <Form1 />
+          </Suspense>
           <div className="container">
             <h3 className="title2">Who Can Apply?</h3>
             <div className="flex">
