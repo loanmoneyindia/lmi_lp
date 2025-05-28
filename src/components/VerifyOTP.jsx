@@ -44,7 +44,7 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="form">
+    <form onSubmit={handleSubmit(onSubmit)} className="verify_otp">
       <div className="form-group">
         <label className="label">Enter OTP</label>
         <input type="text" {...register('otp')} placeholder="Enter OTP" />
