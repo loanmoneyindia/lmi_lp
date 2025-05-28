@@ -9,7 +9,7 @@ const ApplyPLForm = ({ searchParams }) =>{
       const bytes = CryptoJS.AES.decrypt(decodeURIComponent(searchParams.data), SECRET_KEY)
       const decrypted = JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
       mobile = decrypted.mobile
-      applicationno = decrypted.applicationno
+      applicationNo = decrypted.applicationNo
     } catch (err) {
       console.error('Decryption failed:', err)
     }
@@ -23,7 +23,7 @@ const ApplyPLForm = ({ searchParams }) =>{
             <h1 className="form-title">Apply for Personal Loan</h1>
             <p style={{ textAlign: "center", lineHeight: "1.4", paddingBottom: "30px", fontSize: "14px", fontWeight: "600", color: "#f5f8cf"  }}>Share your details and talk with our experts to get an instant decision on your loan.</p>
             <form>
-                <p>Application No: {applicationno}</p>
+                <p>Application No: {applicationNo}</p>
                 <div className="form-group">
                     <div className="form-field">
                         <input type="text" id="name" name="name" placeholder="Your name" />
