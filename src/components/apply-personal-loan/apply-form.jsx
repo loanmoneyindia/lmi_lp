@@ -3,6 +3,8 @@ import { useSearchParams } from 'next/navigation'
 import CryptoJS from 'crypto-js'
 import { useEffect, useState } from 'react'
 
+const SECRET_KEY = '673C9BC13BC4E';
+
 const ApplyPLForm = () =>{
     const searchParams = useSearchParams()
     const [formData, setFormData] = useState({})

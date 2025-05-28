@@ -2,8 +2,6 @@
 import Image from "next/image";
 import ApplyPLForm from "@/components/apply-personal-loan/apply-form";
 
-const SECRET_KEY = '673C9BC13BC4E';
-
 import logo from "../../../public/images/logo.png";
 const page = () => {
    
