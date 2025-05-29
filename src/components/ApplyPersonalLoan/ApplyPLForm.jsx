@@ -25,6 +25,7 @@ const schema = Yup.object().shape({
    Property_Loc: Yup.string()
     .required('Company Name is required'), 
    email: Yup.string()
+    .email('Invalid email format')
     .required('Email is required'), 
    Loan_Amount: Yup.string()
     .required('Loan Amount is required'),  
