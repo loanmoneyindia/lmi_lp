@@ -8,6 +8,7 @@ const otpSchema = Yup.object().shape({
 });
 
 const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
+  const [loading, setLoading] = useState(false); 
   const {
     register,
     handleSubmit,
@@ -15,6 +16,7 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
   } = useForm({ resolver: yupResolver(otpSchema) });
 
   const onSubmit = async (data) => {
+    setLoading(true);
     try {
       const response = await fetch("https://www.loanmoney.co.in/lmi_apis/verify_otp.php", {
         method: "POST",
@@ -45,6 +47,7 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="verify_otp">
+      <p style={{fontSize: '14px',background:"green", color:"white", padding:"5px", borderRadius:"5px"}}>You will receive an OTP via WhatsApp on this number.</p>
       <div className="form-group">
         <label className="label">Enter OTP</label>
         <input type="text" {...register('otp')} placeholder="Enter OTP" />
@@ -55,7 +58,9 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
       <input type="hidden" value={mobile} {...register('mobile')} />
       <input type="hidden" value={applicationNo} {...register('applicationno')} />
 
-      <button type="submit" className="form_btn">Submit</button>
+      <button type="submit" className="form_btn" disabled={loading}>
+        {loading ? "Please wait..." : "Submit"}
+      </button>
     </form>
   );
 };
