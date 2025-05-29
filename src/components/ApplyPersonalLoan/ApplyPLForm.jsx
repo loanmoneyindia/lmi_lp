@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState, useEffect } from 'react';
+import { useRouter  } from 'next/navigation';
 
 import {citiesList, MonthlyIncome, typeOfEmployment, BanKNameList} from "@/data/FormValues"
 
@@ -36,35 +37,19 @@ const schema = Yup.object().shape({
     expectedCaptcha: Yup.number().required(),
 });
 
-
-const onSubmit = async (data) => {
-  console.log(data);
-  try {
-    const response = await fetch("https://www.loanmoney.co.in/lmi_apis/apply_personal_loan.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer a8d5f4e2b6c7a1f9d0e3g7h2k8l6m1z9",
-        },
-        body: JSON.stringify(data),
-    });
-    
-    const result = await response.json();
-    console.log(result);
-
-  } catch (error) {
-    
-  }
-};
-
 const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
     const [captchaQuestion, setCaptchaQuestion] = useState('');
+    const [loading, setLoading] = useState(false); 
     const [formData, setFormData] = useState({
         City: "",
         Net_Salary: "",
         loan_type: "",
         preferredbank: "",
     });
+
+    const router = useRouter();
+
+
     const {
     register,
     handleSubmit,
@@ -94,6 +79,33 @@ const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
         setValue('Phone', mobile || '');
         
     }, [setValue, utms, applicationNo, mobile]);
+
+    const onSubmit = async (data) => {
+        setLoading(true);
+        try {
+            const response = await fetch("https://www.loanmoney.co.in/lmi_apis/apply_personal_loan.php", {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer a8d5f4e2b6c7a1f9d0e3g7h2k8l6m1z9",
+                },
+                body: JSON.stringify(data),
+            });
+            
+            const result = await response.json();
+            
+            if (response.ok && result.status === "success") {
+                const finalUrl = `/thank-you?applicationno=${result.applicationno}`;
+                router.push(finalUrl);
+            } else {
+                alert(result.message || "Invalid OTP");
+            }
+
+        } catch (error) {
+            console.error("Error verifying OTP:", error);
+            alert("Something went wrong.");
+        }
+    };
     
     return(
         <div className="form-container">
@@ -201,7 +213,7 @@ const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
                 </div>
                 <input type="hidden" {...register('expectedCaptcha')} />
                 <div className='form-button'>
-                    <button type="submit" style={{width: "100%", padding: "10px", borderRadius: "5px", backgroundColor: "#FFC107", border: "none", color: "#000", fontSize: "18px",fontWeight: "bold", cursor: "pointer"}}>Apply Now</button>
+                    <button type="submit" style={{width: "100%", padding: "10px", borderRadius: "5px", backgroundColor: "#FFC107", border: "none", color: "#000", fontSize: "18px",fontWeight: "bold", cursor: "pointer"}}  disabled={loading}>{loading ? "Please wait..." : "Apply Now"}</button>
                 </div>
             </form>
         </div>
