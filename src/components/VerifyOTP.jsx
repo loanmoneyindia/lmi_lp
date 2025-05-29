@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useState } from "react";
 
 const otpSchema = Yup.object().shape({
   otp: Yup.string().required('OTP is required').matches(/^\d{4,6}$/, 'Invalid OTP'),
