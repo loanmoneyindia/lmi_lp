@@ -48,7 +48,7 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="verify_otp">
-      <p style={{fontSize: '14px',background:"green", color:"white", padding:"5px", borderRadius:"5px"}}>You will receive an OTP via WhatsApp on this number.</p>
+      <p style={{fontSize: '14px',background:"#349334", color:"white", padding:"5px", borderRadius:"14px"}}>You will receive an OTP via WhatsApp</p>
       <div className="form-group">
         <label className="label">Enter OTP</label>
         <input type="text" {...register('otp')} placeholder="Enter OTP" />
