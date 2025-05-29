@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useState } from "react";
+
 import flag from "../../public/images/indian_flag.svg";
 
 const mobileSchema = Yup.object().shape({
@@ -12,6 +14,7 @@ const mobileSchema = Yup.object().shape({
 });
 
 const MobileNumberForm = ({ onSuccess }) => {
+  const [loading, setLoading] = useState(false); 
   const {
     register,
     handleSubmit,
@@ -19,6 +22,7 @@ const MobileNumberForm = ({ onSuccess }) => {
   } = useForm({ resolver: yupResolver(mobileSchema) });
 
   const onSubmit = async (data) => {
+    setLoading(true);
     try {
       const response = await fetch("https://www.loanmoney.co.in/lmi_apis/send_otp.php", {
         method: "POST",
@@ -59,7 +63,7 @@ const MobileNumberForm = ({ onSuccess }) => {
           <div className="error-message">{errors.mobile.message}</div>
         )}
       </div>
-      <button type="submit" className="form_btn">Proceed</button>
+      <button type="submit" className="form_btn"  disabled={loading}>{loading ? "Please wait..." : "Proceed"}</button>
     </form>
   );
 };
