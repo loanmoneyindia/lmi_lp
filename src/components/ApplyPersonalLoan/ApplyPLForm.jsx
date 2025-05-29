@@ -29,11 +29,11 @@ const schema = Yup.object().shape({
     .required('Email is required'), 
    Loan_Amount: Yup.string()
     .required('Loan Amount is required'),  
-   captchaAnswer: Yup.number()
+   captchaAnswer: Yup.string()
     .required('CAPTCHA is required')
-    .test('captcha-match', 'Incorrect answer', function (value) {
-      const { expectedCaptcha } = this.parent;
-      return value === expectedCaptcha;
+    .test('captcha-match', 'Incorrect CAPTCHA', function (value) {
+        const expected = this.parent.expectedCaptcha;
+        return parseInt(value, 10) === expected;
     }),
     expectedCaptcha: Yup.number().required(),
 });
