@@ -170,9 +170,9 @@ ul, ol{list-style: none;}
 }
 
 .error-message {
-  color: #d32f2f;
+  color:#ff0000;
   font-size: 13px;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 .form_btn{
@@ -259,7 +259,7 @@ ul, ol{list-style: none;}
 }
 
 .form-container{
-  background-color: #0c5595;
+  background-color: #0d375c;
   padding: 30px 40px;
   border-radius: 8px;
   box-shadow:0 0 9px 2px rgb(124 116 116);
