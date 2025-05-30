@@ -416,6 +416,8 @@ ul, ol{list-style: none;}
   margin-bottom: 40px;
 }
 
+.call_now_footer{display: none;}
+
 @media (max-width: 768px) {
   .main_container{
     display: block;
@@ -504,5 +506,25 @@ ul, ol{list-style: none;}
     line-height: 20px;
   }
   .call_now{display: none;}
+  .call_now_footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #106cbd;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+    z-index: 111;
+    display: block;
+  }
+  .call_now_footer .call_now_text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+  }
+  
 }
 

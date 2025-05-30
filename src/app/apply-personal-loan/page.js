@@ -4,7 +4,7 @@ import CryptoJS from 'crypto-js'
 import ApplyPLForm from "@/components/ApplyPersonalLoan/ApplyPLForm";
 import Copyright from "@/components/Copyright";
 import CallNow from "@/components/CallNow";
-
+import CallNowForMobile from "@/components/CallNowForMobile";
 
 
 const SECRET_KEY = '673C9BC13BC4E';
@@ -39,8 +39,11 @@ const page = ({ searchParams }) => {
                     utm_id,
                 }}
                 />
+                <div style={{ marginBottom: "40px" }}>
                 <Copyright />
+                </div>
             </div>
+            <CallNowForMobile />
         </div>
     );
 };
