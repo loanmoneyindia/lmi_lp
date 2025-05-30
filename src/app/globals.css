@@ -40,8 +40,8 @@ ul, ol{list-style: none;}
   grid-template-columns: repeat(12, 1fr);
 }
 .left-section{
-  background: linear-gradient(180deg, #cad7fe, rgba(243, 244, 255, 0));
-  background-color: #cad7fe;
+  background: linear-gradient(180deg, rgb(251, 254, 202), rgba(255, 243, 250, 0));
+  background-color: #f58dfe;
   display: block;
   float: left;
   padding: 24px;
@@ -127,7 +127,7 @@ ul, ol{list-style: none;}
   height: 36px;
   line-height: 34px;
   padding: 0;
-  background: #106cbd;
+  background: #6f2176;
   text-align: center;
   border-radius: 6px;
 }
@@ -141,7 +141,7 @@ ul, ol{list-style: none;}
   padding: 84px 175px 0;
 }
 .title h2{
-  color: #1c64a3;
+  color: #6f2176;
   font-size: 26px;
   line-height: 32px;
   font-weight: 500;
@@ -225,7 +225,7 @@ ul, ol{list-style: none;}
 .form_btn{
   width: 100%;
   padding: 10px;
-  background: #106cbd;
+  background: #6f2176;
   border: none;
   color: #fff;
   font-size: 18px;
@@ -242,7 +242,7 @@ ul, ol{list-style: none;}
 }
 
 .title2{
-  color: #1c64a3;
+  color: #6f2176;
   font-size: 22px;
 }
 
@@ -264,7 +264,7 @@ ul, ol{list-style: none;}
 .flex .item:first-child{
   width: 30%;
   font-weight: bold;
-  color: #093a99;
+  color: #6f2176;
   font-size: 14px;
 }
 .flex .item{
@@ -305,10 +305,10 @@ ul, ol{list-style: none;}
   line-height: 22px;
 }
 
-.info a{color: #106cbd;font-size: 16px;}
+.info a{color: #6f2176;font-size: 16px;}
 
 .custom-list a{
-  color: #093a99;
+  color: #6f2176;
 }
 
 .disclaimer{
@@ -425,7 +425,6 @@ ul, ol{list-style: none;}
   .left-section{
     height: auto;
     padding: 25px 15px 0;
-    background-color: #cad7fe;
     grid-column: unset;
     z-index: -1;
     overflow: hidden;
@@ -482,7 +481,7 @@ ul, ol{list-style: none;}
     padding: 70px 0 0 0;
   }
   .title2 {
-      color: #1c64a3;
+      color: #6f2176;
       font-size: 18px;
       line-height: 25px;
   }
@@ -511,7 +510,7 @@ ul, ol{list-style: none;}
     left: 0;
     right: 0;
     bottom: 0;
-    background: #106cbd;
+    background: #6f2176;
     margin: 0;
     text-align: center;
     padding: 0;

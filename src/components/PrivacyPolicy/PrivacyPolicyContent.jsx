@@ -6,7 +6,7 @@ const PrivacyPolicyContent = () => {
         <CallNow />
         <section className="right_section">
           <div className="title">
-            <h2>Privacy Policy</h2>
+            <h2><strong>Privacy Policy</strong></h2>
           </div>
           <p class="info">This privacy policy sets out how Loanmoney.co uses and protects any information that you give Loanmoney.co when you use this website.</p>
           <p class="info">Loanmoney.co is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, and then you can be assured that it will only be used in accordance with this privacy statement.</p>
