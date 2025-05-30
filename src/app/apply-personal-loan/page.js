@@ -34,7 +34,7 @@ const page = ({ searchParams }) => {
                     utm_id,
                 }}
                 />
-                <p style={{ textAlign: "center", lineHeight: "1.4", paddingBottom: "20px", paddingTop: "8px", fontSize: "14px", fontWeight: "600", color: "#333"  }}>Copyright © 2025 loanmoney.co All Rights Reserved.</p>
+                <p className="copyright">Copyright © 2025 loanmoney.co All Rights Reserved.</p>
             </div>
         </div>
     );

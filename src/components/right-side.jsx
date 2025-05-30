@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Form1 from "./Form1";
+import Link from "next/link";
 import { Suspense } from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faXTwitter, faLinkedinIn, faPinterestP, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import bullets from "../../public/images/check-mark.png";
 const RightSide = () => {
@@ -38,7 +42,7 @@ const RightSide = () => {
                 <div className="item">700+ preferred for quicker approval</div>
             </div>
           </div>
-          <div className="container">
+          <div className="container2">
             <h3 className="title2">Features & Benefits of Personal Loans</h3>
                 <ul className="custom-list">
                     <li>No End-Use Restrictions &mdash; Use for travel, wedding, medical, home renovation &amp; more</li>
@@ -82,26 +86,29 @@ const RightSide = () => {
                     <li>Effective APR: 11.06%</li>
                     <li>Typical APR Range: 10.49% &ndash; 35%</li>
                 </ul>
-                <h3 className="title2">Contact Information</h3>
+          </div>
+          <div className="container2">
+                <h3 className="title2">Get in Touch</h3>
                 <p className="info">Vintage Credit and Leasing Pvt Ltd</p>
-                <p className="info">Head Office: B-520, Tower B, Logix Technova, Plot No. 44, Sector &ndash; 132, Noida &ndash; 201305, Uttar Pradesh</p>
-                <p className="info">Branch Office: B-134, Third Floor, DDA Shed, Okhla Industrial Area, Phase &ndash; 1, New Delhi &ndash; 110020</p>
+                <p className="info">Head Office: B-520, Tower B, Logix Technova, Plot No. 44, Sector &ndash; 132, Noida &ndash; 201305, Uttar Pradesh <Link href="https://g.co/kgs/srtAatt" target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link></p>
+                <p className="info">Branch Office: B-134, Third Floor, DDA Shed, Okhla Industrial Area, Phase &ndash; 1, New Delhi &ndash; 110020 <Link href="https://g.co/kgs/MZ6rg8i" target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link></p>
           </div>
           <div className="container2">
             <h3 className="title2">Follow Us Online</h3>
-                <ul className="custom-list">
-                    <li>Facebook: <a href="https://www.facebook.com/Loanmoney.co.in" target="_blank">https://www.facebook.com/Loanmoney.co.in</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/loanmoney.co.in/" target="_blank">https://www.instagram.com/loanmoney.co.in/</a></li>
-                    <li>X / Twitter: <a href="https://x.com/_LoanMoney" target="_blank">https://x.com/_LoanMoney</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/company/loanmoney" target="_blank">https://www.linkedin.com/company/loanmoney</a></li>
-                    <li>Pinterest: <a href="https://in.pinterest.com/loanmoney_/" target="_blank">https://in.pinterest.com/loanmoney_/</a></li>
-                    <li>YouTube: <a href="https://www.youtube.com/@LoanMoneyYT" target="_blank">https://www.youtube.com/@LoanMoneyYT</a></li>
+                <ul className="social-icons">
+                    <li className="facebook"><Link href="https://www.facebook.com/Loanmoney.co.in" target=""><FontAwesomeIcon icon={faFacebookF} /></Link></li>
+                    <li className="instagram"><Link href="https://www.instagram.com/loanmoney.co.in/" target=""><FontAwesomeIcon icon={faInstagram} /></Link></li>
+                    <li><Link href="https://x.com/_LoanMoney" target=""><FontAwesomeIcon icon={faXTwitter} /></Link></li>
+                    <li className="linkedin"><Link href="https://www.linkedin.com/company/loanmoney" target=""><FontAwesomeIcon icon={faLinkedinIn} /></Link></li>
+                    <li className="pinterest"><Link href="https://in.pinterest.com/loanmoney_/" target=""><FontAwesomeIcon icon={faPinterestP} /></Link></li>
+                    <li className="youtube"><Link href="https://www.youtube.com/@LoanMoneyYT" target=""><FontAwesomeIcon icon={faYoutube} /></Link></li>
                 </ul>
           </div>
           <div className="disclaimer">
             <h3 className="title2">Disclaimer</h3>
                 <p>LoanMoney is a digital loan aggregator platform connecting borrowers with multiple lending partners. Loan approvals depend on lender policies, credit evaluation, and applicant eligibility.</p>
           </div>
+          <p className="copyright">Copyright © 2025 loanmoney.co All Rights Reserved.</p>
         </section>
     );
 }

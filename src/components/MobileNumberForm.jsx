@@ -30,7 +30,7 @@ const MobileNumberForm = ({ onSuccess }) => {
           "Content-Type": "application/json",
           Authorization: "Bearer a8d5f4e2b6c7a1f9d0e3g7h2k8l6m1z9",
         },
-        body: JSON.stringify({ mobile: '91' + data.mobile }),
+        body: JSON.stringify({ mobile: data.mobile }),
       });
 
       const result = await response.json();
