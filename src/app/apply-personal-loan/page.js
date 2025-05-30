@@ -2,6 +2,10 @@
 import Image from "next/image";
 import CryptoJS from 'crypto-js'
 import ApplyPLForm from "@/components/ApplyPersonalLoan/ApplyPLForm";
+import Copyright from "@/components/Copyright";
+import CallNow from "@/components/CallNow";
+
+
 
 const SECRET_KEY = '673C9BC13BC4E';
 
@@ -20,6 +24,7 @@ const page = ({ searchParams }) => {
     }
     return (
         <div id="_apply_pl" style={{ backgroundColor: "#cde5f7" }}>
+           <CallNow />
             <div className="full_container">
                 <Image src={logo} alt="Logo" width={200} height={47} />
                 <ApplyPLForm
@@ -34,7 +39,7 @@ const page = ({ searchParams }) => {
                     utm_id,
                 }}
                 />
-                <p className="copyright">Copyright © 2025 loanmoney.co All Rights Reserved.</p>
+                <Copyright />
             </div>
         </div>
     );

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Form1 from "./Form1";
 import Link from "next/link";
+import Copyright from "@/components/Copyright";
+import CallNow from "@/components/CallNow";
 import { Suspense } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +11,8 @@ import { faFacebookF, faInstagram, faXTwitter, faLinkedinIn, faPinterestP, faYou
 import bullets from "../../public/images/check-mark.png";
 const RightSide = () => {
     return(
+        <div className="right_container">
+        <CallNow />
         <section className="right_section">
           <div className="title">
             <h2>Check best deal for <strong>Personal Loan</strong></h2>
@@ -84,14 +88,14 @@ const RightSide = () => {
                     <li>Total Interest Payable: ₹10,269 (approx.)</li>
                     <li>Total Cost of Borrowing: ₹11,269 (Interest + Processing Fee)</li>
                     <li>Effective APR: 11.06%</li>
-                    <li>Typical APR Range: 10.49% &ndash; 35%</li>
+                    <li>Typical APR Range: 10.49% - 35%</li>
                 </ul>
           </div>
           <div className="container2">
                 <h3 className="title2">Get in Touch</h3>
-                <p className="info">Vintage Credit and Leasing Pvt Ltd</p>
-                <p className="info">Head Office: B-520, Tower B, Logix Technova, Plot No. 44, Sector &ndash; 132, Noida &ndash; 201305, Uttar Pradesh <Link href="https://g.co/kgs/srtAatt" target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link></p>
-                <p className="info">Branch Office: B-134, Third Floor, DDA Shed, Okhla Industrial Area, Phase &ndash; 1, New Delhi &ndash; 110020 <Link href="https://g.co/kgs/MZ6rg8i" target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link></p>
+                <p className="info" style={{fontWeight: 'bold'}}>Vintage Credit and Leasing Pvt Ltd</p>
+                <p className="info"><span style={{fontWeight: 'bold'}}>Head Office:</span> B-520, Tower B, Logix Technova, Plot No. 44, Sector - 132, Noida - 201305, Uttar Pradesh <Link href="https://g.co/kgs/srtAatt" target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link></p>
+                <p className="info"><span style={{fontWeight: 'bold'}}>Branch Office:</span> B-134, Third Floor, DDA Shed, Okhla Industrial Area, Phase - 1, New Delhi - 110020 <Link href="https://g.co/kgs/MZ6rg8i" target="_blank"><FontAwesomeIcon icon={faLocationDot} /></Link></p>
           </div>
           <div className="container2">
             <h3 className="title2">Follow Us Online</h3>
@@ -106,10 +110,14 @@ const RightSide = () => {
           </div>
           <div className="disclaimer">
             <h3 className="title2">Disclaimer</h3>
-                <p>LoanMoney is a digital loan aggregator platform connecting borrowers with multiple lending partners. Loan approvals depend on lender policies, credit evaluation, and applicant eligibility.</p>
+                <p>LoanMoney is a digital loan aggregator platform that connects borrowers with multiple lending partners. All loan approvals are subject to the lending partner&apos;s internal policies, credit assessment, and applicant eligibility.</p>
+                <p>The brand name LoanMoney is solely owned and operated by <strong>Vintage Credit and Leasing Pvt. Ltd.</strong> Vintage Credit and Leasing Pvt. Ltd. </p>
+                <p>Vintage Credit and Leasing Pvt. Ltd. (Registration No: 14.01406) is registered with the <strong>Reserve Bank of India (RBI)</strong> as a <strong>Non-Banking Financial Company (NBFC)</strong> and is authorized to conduct NBFC-related financial services.</p>
+                <p>Unauthorized use of the LoanMoney brand name, assets, or identity is strictly prohibited and may result in legal action.</p>
           </div>
-          <p className="copyright">Copyright © 2025 loanmoney.co All Rights Reserved.</p>
+          <Copyright />
         </section>
+        </div>
     );
 }
 

@@ -16,15 +16,19 @@ export default function Home() {
             </div>
           </header>
           <div className="left_content">
-            <h1>Personal Loan</h1>
-            <div className="left_feature">
-              <ul>
-                <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Lowest ROI of 10.49%</li>
-                <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>EMI of Rs. 1543/- per Lac</li>
-                <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Nil closer & Processing Fee*</li>
-              </ul>
+            <div className="leftInfo">
+              <h1>Personal Loan</h1>
+              <div className="left_feature">
+                <ul>
+                  <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Lowest ROI of 10.49%</li>
+                  <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>EMI of Rs. 1543/- per Lac</li>
+                  <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Nil closer & Processing Fee*</li>
+                </ul>
+              </div>
             </div>
-            <Image src={personal_loan} alt="Personal Loan" width={700} height={300} className="lp_image" />
+            <div className="lp_image_container">
+              <Image src={personal_loan} alt="Personal Loan" width={700} height={300} className="lp_image" />
+            </div>
           </div>
         </section>
         <RightSide />
