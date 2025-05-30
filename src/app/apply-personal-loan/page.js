@@ -23,7 +23,7 @@ const page = ({ searchParams }) => {
         }
     }
     return (
-        <div id="_apply_pl" style={{ backgroundColor: "#cde5f7" }}>
+        <div id="_apply_pl" style={{ backgroundColor: "#efd1f2" }}>
            <CallNow />
             <div className="full_container">
                 <Image src={logo} alt="Logo" width={200} height={47} />

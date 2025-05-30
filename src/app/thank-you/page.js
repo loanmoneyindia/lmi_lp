@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ThankYou = () => {
     return (
-        <div id="_thank_you" style={{ backgroundColor: "#cde5f7" }}>
+        <div id="_thank_you" style={{ backgroundColor: "#efd1f2" }}>
             <div className="full_container">
                 <div className="thanks_container">
                 <Image src={logo} alt="Logo" width={200} height={47} />
