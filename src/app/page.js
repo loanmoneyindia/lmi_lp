@@ -5,6 +5,8 @@ import logo from "../../public/images/logo.png";
 import personal_loan from "../../public/images/personal_loan.svg";
 import bullets from "../../public/images/bullet-point.png";
 import CallNowForMobile from "@/components/CallNowForMobile";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClover } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -20,10 +22,10 @@ export default function Home() {
             <div className="leftInfo">
               <h1>Personal Loan</h1>
               <div className="left_feature">
-                <ul>
-                  <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Lowest ROI of 10.49%</li>
-                  <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>EMI of Rs. 1543/- per Lac</li>
-                  <li><div className="left_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Nil closer & Processing Fee*</li>
+                <ul className="custom-list2">
+                  <li>Lowest ROI of 10.49%</li>
+                  <li>EMI of Rs. 1543/- per Lac</li>
+                  <li>Nil closer & Processing Fee*</li>
                 </ul>
               </div>
             </div>

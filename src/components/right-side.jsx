@@ -18,10 +18,10 @@ const RightSide = () => {
             <h2>Check best deal for <strong>Personal Loan</strong></h2>
           </div>
           <div className="right_feature">
-            <ul>
-            <li><div className="right_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Overdraft limit against your salary</li>
-            <li><div className="right_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Offers from 25+ lenders</li>
-            <li><div className="right_pointer"><Image src={bullets} alt="Bullet" width={28} height={28} /></div>Loan disbursement in just 2 hours</li>
+            <ul className="custom-list">
+                <li>Overdraft limit against your salary</li>
+                <li>Offers from 25+ lenders</li>
+                <li>Loan disbursement in just 2 hours</li>
             </ul>
           </div>
           <Suspense fallback={<div>Loading...</div>}>
