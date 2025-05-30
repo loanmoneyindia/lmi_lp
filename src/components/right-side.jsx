@@ -100,12 +100,12 @@ const RightSide = () => {
           <div className="container2">
             <h3 className="title2">Follow Us Online</h3>
                 <ul className="social-icons">
-                    <li className="facebook"><Link href="https://www.facebook.com/Loanmoney.co.in" target=""><FontAwesomeIcon icon={faFacebookF} /></Link></li>
-                    <li className="instagram"><Link href="https://www.instagram.com/loanmoney.co.in/" target=""><FontAwesomeIcon icon={faInstagram} /></Link></li>
-                    <li><Link href="https://x.com/_LoanMoney" target=""><FontAwesomeIcon icon={faXTwitter} /></Link></li>
-                    <li className="linkedin"><Link href="https://www.linkedin.com/company/loanmoney" target=""><FontAwesomeIcon icon={faLinkedinIn} /></Link></li>
-                    <li className="pinterest"><Link href="https://in.pinterest.com/loanmoney_/" target=""><FontAwesomeIcon icon={faPinterestP} /></Link></li>
-                    <li className="youtube"><Link href="https://www.youtube.com/@LoanMoneyYT" target=""><FontAwesomeIcon icon={faYoutube} /></Link></li>
+                    <li className="facebook"><Link href="https://www.facebook.com/Loanmoney.co.in" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></Link></li>
+                    <li className="instagram"><Link href="https://www.instagram.com/loanmoney.co.in/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link></li>
+                    <li><Link href="https://x.com/_LoanMoney" target="_blank"><FontAwesomeIcon icon={faXTwitter} /></Link></li>
+                    <li className="linkedin"><Link href="https://www.linkedin.com/company/loanmoney" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></Link></li>
+                    <li className="pinterest"><Link href="https://in.pinterest.com/loanmoney_/" target="_blank"><FontAwesomeIcon icon={faPinterestP} /></Link></li>
+                    <li className="youtube"><Link href="https://www.youtube.com/@LoanMoneyYT" target="_blank"><FontAwesomeIcon icon={faYoutube} /></Link></li>
                 </ul>
           </div>
           <div className="disclaimer">
