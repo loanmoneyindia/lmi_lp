@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState, useEffect } from 'react';
 import { useRouter  } from 'next/navigation';
+import Link from 'next/link';
 
 import {citiesList, MonthlyIncome, typeOfEmployment, BanKNameList} from "@/data/FormValues"
 
@@ -28,7 +29,8 @@ const schema = Yup.object().shape({
     .email('Invalid email format')
     .required('Email is required'), 
    Loan_Amount: Yup.string()
-    .required('Loan Amount is required'),  
+    .required('Loan Amount is required'),
+   acceptTerms: Yup.bool().oneOf([true], 'This field is required'),   
    captchaAnswer: Yup.string()
     .required('CAPTCHA is required')
     .test('captcha-match', 'Incorrect CAPTCHA', function (value) {
@@ -57,7 +59,10 @@ const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
     formState: { errors },
     setValue,
     } = useForm({ 
-        resolver: yupResolver(schema)
+        resolver: yupResolver(schema),
+        defaultValues: {
+            acceptTerms: true,
+        }
     });
 
     const handleChange = (e) => {
@@ -209,6 +214,15 @@ const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
                         </div>
                         {errors.captchaAnswer && (
                             <div className="error-message">{errors.captchaAnswer.message}</div>
+                        )}
+                    </div>
+                </div>
+                <div className="form-group">
+                    <div>
+                        <input type='checkbox' {...register('acceptTerms')} />&nbsp;
+                        <span style={{color: "#FFF"}}>Yes, I Have Read the <Link href="/privacy-policy" style={{textDecoration: "underline"}} target='_blank'>Privacy Policy</Link> & Agree to It.</span>
+                        {errors.acceptTerms && (
+                            <div className="error-message">{errors.acceptTerms.message}</div>
                         )}
                     </div>
                 </div>

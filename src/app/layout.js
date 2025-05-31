@@ -13,8 +13,8 @@ const roboto = Roboto_Slab({
 });
 
 export const metadata = {
-  title: "Apply for Personal Loan | LoanMoney",
-  description: "Apply for Personal Loan",
+  title: "Personal Loans from Banks & NBFCs at Lowest Interest Rates - LoanMoney",
+  description: "Compare unsecured personal loans against salary from 30+ banks/NBFCs. Get fast approval, low interest, minimal paperwork & zero hassle with LoanMoney.",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 

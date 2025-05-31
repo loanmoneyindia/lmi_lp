@@ -3,10 +3,7 @@ import RightSide from "@/components/right-side";
 
 import logo from "../../public/images/logo.png";
 import personal_loan from "../../public/images/personal_loan.svg";
-import bullets from "../../public/images/bullet-point.png";
 import CallNowForMobile from "@/components/CallNowForMobile";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClover } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
