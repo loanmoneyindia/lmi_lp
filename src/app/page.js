@@ -20,9 +20,10 @@ export default function Home() {
               <h1>Personal Loan</h1>
               <div className="left_feature">
                 <ul className="custom-list2">
-                  <li>Lowest ROI of 10.49%</li>
-                  <li>EMI of Rs. 1543/- per Lac</li>
+                  <li>Lowest ROI of 10.49%*</li>
+                  <li>EMI of Rs. 1543/- per Lac*</li>
                   <li>Nil closer & Processing Fee*</li>
+                  <li>Maximum tenure 96 months*</li>
                 </ul>
               </div>
             </div>

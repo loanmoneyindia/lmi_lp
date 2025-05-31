@@ -18,9 +18,9 @@ const RightSide = () => {
           </div>
           <div className="right_feature">
             <ul className="custom-list">
-                <li>Overdraft limit against your salary</li>
-                <li>Offers from 25+ lenders</li>
-                <li>Loan disbursement in just 2 hours</li>
+                <li>Get overdraft limit against your salary</li>
+                <li>Check offers from 25+ lenders</li>
+                <li>Get loan disbursement in just 2 hours</li>
             </ul>
           </div>
           <Suspense fallback={<div>Loading...</div>}>
@@ -28,10 +28,6 @@ const RightSide = () => {
           </Suspense>
           <div className="container">
             <h3 className="title2">Who Can Apply?</h3>
-            <div className="flex">
-                <div className="item">Criteria</div>
-                <div className="item">Requirement</div>
-            </div>
             <div className="flex">
                 <div className="item">Age</div>
                 <div className="item">23 to 58 years</div>
@@ -61,12 +57,12 @@ const RightSide = () => {
           <div className="container2">
             <h3 className="title2">Why Choose LoanMoney?</h3>
                 <ul className="custom-list">
-                    <li>Compare offers from 30+ Banks &amp; NBFCs</li>
-                    <li>Get Pre-Approved Loan Offers Within 2 Hours</li>
-                    <li>Instant Sanction &amp; Fast Disbursal</li>
-                    <li>100% Contactless &amp; Paperless Process</li>
+                    <li>Compare offers from 25+ Banks & NBFCs</li>
+                    <li>Door to door service (if required)</li>
+                    <li>100% Contactless & Paperless Process</li>
                     <li>Special Offers with Nil Processing Fee Available</li>
-                    <li>Transparent APR &amp; No Hidden Charges</li>
+                    <li>Refer and earn options</li>
+                    <li>After sales service</li>
                 </ul>
           </div>
           <div className="container2">
