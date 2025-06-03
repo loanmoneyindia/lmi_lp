@@ -28,8 +28,10 @@ const schema = Yup.object().shape({
    email: Yup.string()
     .email('Invalid email format')
     .required('Email is required'), 
-   Loan_Amount: Yup.string()
-    .required('Loan Amount is required'),
+   Loan_Amount: Yup.number()
+    .required('Loan Amount is required')
+    .typeError('Loan Amount must be a number')
+    .min(100000, 'Loan Amount must be at least 1,000,00'),
    acceptTerms: Yup.bool().oneOf([true], 'This field is required'),   
    captchaAnswer: Yup.string()
     .required('CAPTCHA is required')
