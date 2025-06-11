@@ -1,5 +1,7 @@
 import { Roboto_Slab } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import ThankYouGTM from "@/components/thank-you-gtm";
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -21,6 +23,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Ads Global site tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17183337650"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17183337650');
+          `}
+        </Script>
+        <ThankYouGTM />
+      </head>
       <body className={roboto.className}>
         {children}
       </body>
