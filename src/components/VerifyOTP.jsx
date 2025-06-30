@@ -33,8 +33,8 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
       });
 
       const result = await response.json();
-
-      if (response.ok && result.status === "success") {
+      console.log(result);
+      if (result.status === "success") {
         alert("OTP Verified Successfully!");
         onVerified();
       } else {
