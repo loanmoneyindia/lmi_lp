@@ -48,7 +48,7 @@ const RightSide = () => {
                     <li>Loan Amount: ₹1,00,000 to ₹50,00,000 (subject to lender discretion)</li>
                     <li>Flexible Tenures: 12 to 96 months (1 to 8 years)</li>
                     <li>Minimal Documentation &mdash; Apply quickly online</li>
-                    <li>Attractive Interest Rates starting at 10.49% p.a.</li>
+                    <li>Attractive Interest Rates starting at 9.99% p.a.</li>
                     <li>Quick Disbursal &mdash; Funds transferred within 2 hours</li>
                     <li>Eligible customers get instant pre-approved loans</li>
                     <li>Avail Attractive Loans with Nil Processing Fee on Select Offers</li>
