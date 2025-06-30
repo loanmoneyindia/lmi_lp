@@ -77,13 +77,13 @@ const RightSide = () => {
                 <p style={{paddingTop: '10px'}}><strong>Example:</strong></p>
                 <ul className="custom-list">
                     <li>Loan Amount: ₹1,00,000</li>
-                    <li>Interest Rate: 10.49% p.a.</li>
+                    <li>Interest Rate: 9.99% p.a.</li>
                     <li>Tenure: 12 Months (1 Year)</li>
                     <li>Processing Fee: 1% = ₹1,000</li>
-                    <li>Total Interest Payable: ₹10,269 (approx.)</li>
-                    <li>Total Cost of Borrowing: ₹11,269 (Interest + Processing Fee)</li>
-                    <li>Effective APR: 11.06%</li>
-                    <li>Typical APR Range: 10.49% - 35%</li>
+                    <li>Total Interest Payable: ₹5,493 (approx.)</li>
+                    <li>Total Cost of Borrowing: ₹6,493 (Interest + Processing Fee)</li>
+                    <li>Effective APR: ~6.49%</li>
+                    <li>Typical APR Range: 9.99% - 35%</li>
                 </ul>
           </div>
           <div className="container2">

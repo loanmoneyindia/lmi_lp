@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 
 import flag from "../../public/images/indian_flag.svg";
+import { pad } from "crypto-js";
 
 const mobileSchema = Yup.object().shape({
   mobile: Yup.string()
@@ -64,6 +65,7 @@ const MobileNumberForm = ({ onSuccess }) => {
         )}
       </div>
       <button type="submit" className="form_btn"  disabled={loading}>{loading ? "Please wait..." : "Proceed"}</button>
+      <p style={{paddingTop: "6px"}}><small style={{color: "#FF0000", fontWeight: "bold", fontSize: "13px"}}>You&apos;re just one step away from getting the best loan offer!</small></p>
     </form>
   );
 };
