@@ -39,6 +39,7 @@ const VerifyOTP = ({ mobile, applicationNo, onVerified }) => {
         onVerified();
       } else {
         alert(result.message || "Invalid OTP");
+        setLoading(false);
       }
     } catch (error) {
       console.error("Error verifying OTP:", error);
