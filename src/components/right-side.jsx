@@ -48,7 +48,7 @@ const RightSide = () => {
                     <li>Loan Amount: ₹1,00,000 to ₹50,00,000 (subject to lender discretion)</li>
                     <li>Flexible Tenures: 12 to 96 months (1 to 8 years)</li>
                     <li>Minimal Documentation &mdash; Apply quickly online</li>
-                    <li>Attractive Interest Rates starting at 9.99% p.a.</li>
+                    <li>Attractive Interest Rates starting at 10.25% p.a.</li>
                     <li>Quick Disbursal &mdash; Funds transferred within 2 hours</li>
                     <li>Eligible customers get instant pre-approved loans</li>
                     <li>Avail Attractive Loans with Nil Processing Fee on Select Offers</li>
@@ -77,13 +77,13 @@ const RightSide = () => {
                 <p style={{paddingTop: '10px'}}><strong>Example:</strong></p>
                 <ul className="custom-list">
                     <li>Loan Amount: ₹1,00,000</li>
-                    <li>Interest Rate: 9.99% p.a.</li>
+                    <li>Interest Rate: 10.25% p.a.</li>
                     <li>Tenure: 12 Months (1 Year)</li>
                     <li>Processing Fee: 1% = ₹1,000</li>
-                    <li>Total Interest Payable: ₹5,493 (approx.)</li>
-                    <li>Total Cost of Borrowing: ₹6,493 (Interest + Processing Fee)</li>
-                    <li>Effective APR: ~6.49%</li>
-                    <li>Typical APR Range: 9.99% - 35%</li>
+                    <li>Total Interest Payable: ₹5,624 (approx.)</li>
+                    <li>Total Cost of Borrowing: ₹6,624 (Interest + Processing Fee)</li>
+                    <li>Effective APR: ~6.62%</li>
+                    <li>Typical APR Range: 10.25% - 35%</li>
                 </ul>
           </div>
           <div className="container2">
