@@ -42,7 +42,7 @@ const schema = Yup.object().shape({
     expectedCaptcha: Yup.number().required(),
 });
 
-const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
+const ApplyPLForm = ({ mobile, applicationNo, pageSlug, utms }) =>{
     const [captchaQuestion, setCaptchaQuestion] = useState('');
     const [loading, setLoading] = useState(false); 
     const [formData, setFormData] = useState({
@@ -84,9 +84,10 @@ const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
         setValue('utm_content', utms?.utm_content || '');
         setValue('utm_id', utms?.utm_id || '');
         setValue('applicationno', applicationNo || '');
+        setValue('pageSlug', pageSlug || '');
         setValue('Phone', mobile || '');
         
-    }, [setValue, utms, applicationNo, mobile]);
+    }, [setValue, utms, applicationNo, mobile, pageSlug]);
 
     const onSubmit = async (data) => {
         setLoading(true);
@@ -128,6 +129,7 @@ const ApplyPLForm = ({ mobile, applicationNo, utms }) =>{
                 <input type="hidden" {...register("utm_content")} />
                 <input type="hidden" {...register("utm_id")} />
                 <input type='hidden' {...register("applicationno")} />
+                <input type='hidden' {...register("pageSlug")} />
 
                 <div className="form-group">
                     <div className="form-field">

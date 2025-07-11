@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import flag from "../../public/images/indian_flag.svg";
 import { pad } from "crypto-js";

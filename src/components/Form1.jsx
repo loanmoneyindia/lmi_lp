@@ -24,7 +24,16 @@ const Form1 = () => {
 
     const handleOtpVerified = () => {
         console.log("OTP verified for:", mobile);
-        const payload = JSON.stringify({ mobile, applicationNo });
+
+        let pageSlug = '';
+        if (typeof window !== 'undefined') {
+            const pathSegments = window.location.pathname.split('/').filter(Boolean); // removes empty segments
+            pageSlug = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : 'index';
+        }
+
+
+        
+        const payload = JSON.stringify({ mobile, applicationNo, pageSlug }); 
         const cipherText = CryptoJS.AES.encrypt(payload, SECRET_KEY).toString();
         console.log("CipherText:", cipherText);
         const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
