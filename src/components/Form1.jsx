@@ -30,8 +30,6 @@ const Form1 = () => {
             const pathSegments = window.location.pathname.split('/').filter(Boolean); // removes empty segments
             pageSlug = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : 'index';
         }
-
-
         
         const payload = JSON.stringify({ mobile, applicationNo, pageSlug }); 
         const cipherText = CryptoJS.AES.encrypt(payload, SECRET_KEY).toString();

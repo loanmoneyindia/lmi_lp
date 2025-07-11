@@ -28,8 +28,9 @@ const page = ({ searchParams }) => {
             <div className="full_container">
                 <Image src={logo} alt="Logo" width={200} height={47} />
                 <ApplyPLForm
-                 mobile={decryptedData?.mobile || ''}
+                mobile={decryptedData?.mobile || ''}
                 applicationNo={decryptedData?.applicationNo || ''}
+                pageSlug={decryptedData?.pageSlug || ''}
                 utms={{
                     utm_source,
                     utm_medium,
