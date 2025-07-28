@@ -14,12 +14,12 @@ export default function Home() {
               <Image src={logo} alt="Logo" width={200} height={47} />
             </div>
           </header>
-          <div className="left_content">
+          <div className="left_content overdraft_left_side">
             <div className="leftInfo">
                <h1>Personal Loan from Axis Bank</h1>
               <div className="left_feature">
                <ul className="custom-list2">
-                    <li>Interest Rates starting from <strong> 49% p.a.</strong></li>
+                    <li>Interest Rates starting from <strong>10.49% p.a.</strong></li>
                     <li>EMI from <strong>&nbsp;₹1,686/- per Lac</strong> (for 84-month tenure)</li>
                     <li>Minimal Processing Fees and attractive offers</li>
                     <li>Quick approvals for a loan of up to <strong>₹40 Lakhs</strong></li>
