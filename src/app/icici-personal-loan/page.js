@@ -14,7 +14,7 @@ export default function Home() {
               <Image src={logo} alt="Logo" width={200} height={47} />
             </div>
           </header>
-          <div className="left_content">
+          <div className="left_content overdraft_left_side">
             <div className="leftInfo">
                <h1>Instant Personal Loan from ICICI Bank</h1>
               <div className="left_feature">
