@@ -19,7 +19,7 @@ export default function Home() {
                <h1>Personal Loan from HDFC Bank</h1>
               <div className="left_feature">
                <ul className="custom-list2">
-                    <li>Interest Rates starting from <strong>50% p.a.</strong></li>
+                    <li>Interest Rates starting from <strong>10.50% p.a.</strong></li>
                     <li>EMI from <strong>₹1,686/- per Lac</strong> (for 84-month tenure)</li>
                     <li>Special Offers with <strong>Zero Processing Fee</strong> for selected customers</li>
                 </ul>

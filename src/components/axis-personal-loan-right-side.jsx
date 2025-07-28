@@ -41,7 +41,7 @@ const AxisBankSide = () => {
                     <li><strong>Loan Amount: up to ₹40,00,000</strong> (subject to eligibility).</li>
                     <li><strong>Flexible Tenures:</strong> Choose a comfortable repayment period from 12 to 84 months.</li>
                     <li><strong>Minimal Documentation</strong> &mdash; A simple and hassle-free application process.</li>
-                    <li><strong>Attractive Interest Rates</strong> starting at just <strong>49% p.a.</strong></li>
+                    <li><strong>Attractive Interest Rates</strong> starting at just <strong>10.49% p.a.</strong></li>
                     <li><strong>Quick Disbursal</strong> &mdash; Get the funds you need without unnecessary delays.</li>
                     <li><strong>Balance Transfer Option:</strong> Transfer your existing high-interest personal loans to Axis Bank for better rates.</li>
                     <li><strong>Trusted Service</strong> from one of India&rsquo;s leading private sector banks.</li>

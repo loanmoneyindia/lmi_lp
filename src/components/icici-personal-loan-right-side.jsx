@@ -41,7 +41,7 @@ const IciciBankSide = () => {
                     <li><strong>Large Loan Amount:</strong> Get financing from <strong>₹1,00,000 up to ₹50,00,000</strong>.</li>
                     <li><strong>Extended Repayment Tenure:</strong> Choose a comfortable repayment plan from 12 to <strong>72 months</strong> (6 years).</li>
                     <li><strong>Fully Digital Process</strong> &mdash; Apply from anywhere with a completely paperless journey.</li>
-                    <li><strong>Attractive Interest Rates</strong> starting at just <strong>60% p.a.</strong></li>
+                    <li><strong>Attractive Interest Rates</strong> starting at just <strong>10.60% p.a.</strong></li>
                     <li><strong>Minimal Documentation</strong> required for a quick and easy process.</li>
                 </ul>
           </div>

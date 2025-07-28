@@ -46,7 +46,7 @@ const AxisBankSide = () => {
                     <li><strong>Loan Amount: ₹1,00,000 to ₹40,00,000</strong> (subject to eligibility).</li>
                     <li><strong>Flexible Tenures:</strong> 12 to 84 months (1 to 7 years).</li>
                     <li><strong>Minimal Documentation</strong> &mdash; Especially for existing HDFC Bank customers.</li>
-                    <li><strong>Attractive Interest Rates</strong> starting at <strong>50% p.a.</strong></li>
+                    <li><strong>Attractive Interest Rates</strong> starting at <strong>10.50% p.a.</strong></li>
                     <li><strong>Quick Disbursal</strong> &mdash; Funds can be transferred in just 4 hours.</li>
                     <li><strong>Instant Pre-approved Loans</strong> available for eligible HDFC Bank customers.</li>
                     <li><strong>Trusted Brand</strong> &mdash; Backed by the security and trust of HDFC Bank.</li>

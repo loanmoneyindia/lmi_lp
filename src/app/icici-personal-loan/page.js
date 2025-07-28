@@ -19,7 +19,7 @@ export default function Home() {
                <h1>Instant Personal Loan from ICICI Bank</h1>
               <div className="left_feature">
                <ul className="custom-list2">
-                    <li>Interest Rates starting from <strong>60% p.a.</strong></li>
+                    <li>Interest Rates starting from <strong>10.60% p.a.</strong></li>
                     <li>Get a loan of up to <strong> ₹50 Lakhs</strong></li>
                     <li>Flexible tenure up to <strong> 72 months</strong></li>
                 </ul>
