@@ -7,15 +7,18 @@ const ThankYouGTM = () => {
     if (pathname === '/thank-you') {
         return (
             <>
-            <script
-                id="gtag-thank-you"
-                dangerouslySetInnerHTML={{
-                    __html: `gtag('config', 'AW-17183337650');`,
-                }}
-            />
+            {/* Google Ads Conversion Tracking */}
+            <Script id="gtag-thank-you" strategy="afterInteractive">
+            {`
+                gtag('config', 'AW-17183337650');
+            `}
+            </Script>
+
             {/* Facebook Pixel Lead Event */}
             <Script id="fbq-lead" strategy="afterInteractive">
-                {`fbq('track', 'Lead');`}
+            {`
+                fbq('track', 'Lead');
+            `}
             </Script>
             </>
         );
